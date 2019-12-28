@@ -10,6 +10,10 @@ It makes almost everything pick quickly.
 
 ## Changelog
 
+**List of tweaks I made for version 1.1.1**
+
+- Added Carrat and Moon Sapling quickly pickable.
+
 **List of tweaks I made for version 1.0.6**
 
 - Added Oasis Cactus and Bull Kelp quickly pickable.
