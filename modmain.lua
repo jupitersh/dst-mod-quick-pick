@@ -17,6 +17,8 @@ local quick_pick_list = {
     "wormlight_plant",
     "rock_avocado_bush",
     "bullkelp_plant",
+    "carrat_planted",
+    "sapling_moon",
 }
 
 --For the mod of Coffee

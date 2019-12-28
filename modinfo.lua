@@ -1,7 +1,7 @@
 name = "Quick Pick"
 description = "It makes almost everything pick quickly."
 author = "辣椒小皇纸"
-version = "1.1.0"
+version = "1.1.1"
 forumthread = ""
 
 api_version = 10
