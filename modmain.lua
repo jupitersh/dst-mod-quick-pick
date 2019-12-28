@@ -1,31 +1,35 @@
-function pick(inst)
-	if inst.components.pickable then
-	inst.components.pickable.quickpick = true
-	end
-end
-
-AddPrefabPostInit("sapling", pick)
-AddPrefabPostInit("marsh_bush", pick)
-AddPrefabPostInit("reeds", pick)
-AddPrefabPostInit("grass", pick)
-AddPrefabPostInit("berrybush2", pick)
-AddPrefabPostInit("berrybush", pick)
-AddPrefabPostInit("flower_cave", pick)
-AddPrefabPostInit("flower_cave_double", pick)
-AddPrefabPostInit("flower_cave_triple", pick)
-AddPrefabPostInit("red_mushroom", pick)
-AddPrefabPostInit("green_mushroom", pick)
-AddPrefabPostInit("blue_mushroom", pick)
-AddPrefabPostInit("cactus", pick)
-AddPrefabPostInit("oasis_cactus", pick)
-AddPrefabPostInit("lichen", pick)
-AddPrefabPostInit("wormlight_plant", pick)
-AddPrefabPostInit("rock_avocado_bush", pick)
-AddPrefabPostInit("bullkelp_plant", pick)
+local quick_pick_list = {
+    "sapling",
+    "marsh_bush",
+    "reeds",
+    "grass",
+    "berrybush2",
+    "berrybush",
+    "flower_cave",
+    "flower_cave_double",
+    "flower_cave_triple",
+    "red_mushroom",
+    "green_mushroom",
+    "blue_mushroom",
+    "cactus",
+    "oasis_cactus",
+    "lichen",
+    "wormlight_plant",
+    "rock_avocado_bush",
+    "bullkelp_plant",
+}
 
 --For the mod of Coffee
 if GLOBAL.KnownModIndex:IsModEnabled("workshop-1463489316") then
-	AddPrefabPostInit("coffeebush", pick)
+    table.insert(quick_pick_list,"coffeebush")
+end
+
+for k,v in pairs(quick_pick_list) do
+    AddPrefabPostInit(v, function(inst)
+        if inst.components.pickable then
+            inst.components.pickable.quickpick = true
+        end
+    end)
 end
 
 --Quick pick from cookpots, dryers and farms
