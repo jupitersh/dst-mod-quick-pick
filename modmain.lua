@@ -19,6 +19,7 @@ local quick_pick_list = {
     "bullkelp_plant",
     "carrat_planted",
     "sapling_moon",
+    "plant_normal_ground",
 }
 
 --For the mod of Coffee
