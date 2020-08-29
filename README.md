@@ -10,6 +10,10 @@ It makes almost everything pick quickly.
 
 ## Changelog
 
+**Version 1.3.0**
+
+- Quick cooking foods on firepit.
+
 **Version 1.2.0**
 
 - Added Wormwood Crop quickly pickable.

@@ -1,7 +1,7 @@
 name = "Quick Pick"
 description = "It makes almost everything pick quickly."
 author = "辣椒小皇纸"
-version = "1.2.0"
+version = "1.3.0"
 forumthread = ""
 
 api_version = 10
@@ -21,14 +21,24 @@ server_filter_tags = {"Quick Pick"}
 
 configuration_options =
 {
-	{
-		name = "quick_harvest",
-		label = "Quick Harvest",
-		hover = "Quick pick from cookpots, dryers and farms",
-		options =	{
-						{description = "Yes", data = true, hover = ""},
-						{description = "No", data = false, hover = ""},
-					},
-		default = true,
-	},
+    {
+        name = "quick_harvest",
+        label = "Quick Harvest",
+        hover = "Quick picking from cookpots, dryers and farms",
+        options =   {
+                        {description = "Yes", data = true, hover = ""},
+                        {description = "No", data = false, hover = ""},
+                    },
+        default = true,
+    },
+    {
+        name = "quick_cook_on_fire",
+        label = "Quick Cook on Fire",
+        hover = "Quick cooking foods on firepit.",
+        options =   {
+                        {description = "Yes", data = true, hover = ""},
+                        {description = "No", data = false, hover = ""},
+                    },
+        default = true,
+    },
 }

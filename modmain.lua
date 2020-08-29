@@ -37,8 +37,16 @@ end
 
 --Quick pick from cookpots, dryers and farms
 if GetModConfigData("quick_harvest") then
-	AddStategraphPostInit("wilson", function(sg)
-		local actionhandler = GLOBAL.ActionHandler(GLOBAL.ACTIONS.HARVEST, "doshortaction")
-		sg.actionhandlers[GLOBAL.ACTIONS.HARVEST] = actionhandler
-	end)
+    AddStategraphPostInit("wilson", function(sg)
+        local actionhandler = GLOBAL.ActionHandler(GLOBAL.ACTIONS.HARVEST, "doshortaction")
+        sg.actionhandlers[GLOBAL.ACTIONS.HARVEST] = actionhandler
+    end)
+end
+
+--Quick cooking on firepit
+if GetModConfigData("quick_cook_on_fire") then
+    AddStategraphPostInit("wilson", function(sg)
+        local actionhandler = GLOBAL.ActionHandler(GLOBAL.ACTIONS.COOK, "doshortaction")
+        sg.actionhandlers[GLOBAL.ACTIONS.COOK] = actionhandler
+    end)
 end
