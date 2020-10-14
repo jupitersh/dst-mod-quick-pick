@@ -11,16 +11,29 @@ local quick_pick_list = {
     "red_mushroom",
     "green_mushroom",
     "blue_mushroom",
-    "cactus",
-    "oasis_cactus",
-    "lichen",
     "wormlight_plant",
     "rock_avocado_bush",
     "bullkelp_plant",
     "carrat_planted",
     "sapling_moon",
-    "plant_normal_ground",
 }
+
+--Quick Pick Cactus or Lichen
+if GetModConfigData("quick_pick_cactus") then
+    local quick_pick_list2 = {
+        "cactus",
+        "oasis_cactus",
+        "lichen",
+    }
+    for k,v in pairs(quick_pick_list2) do
+        table.insert(quick_pick_list, v)
+    end
+end
+
+--Quick Pick Wormwood's plant
+if GetModConfigData("quick_pick_plant_normal_ground") then
+    table.insert(quick_pick_list, "plant_normal_ground")
+end
 
 --For the mod of Coffee
 if GLOBAL.KnownModIndex:IsModEnabled("workshop-1463489316") then

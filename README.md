@@ -10,6 +10,10 @@ It makes almost everything pick quickly.
 
 ## Changelog
 
+**Version 1.4.0**
+
+- Quick picking lichen and cactus are configurable now.
+
 **Version 1.3.0**
 
 - Quick cooking foods on firepit.
