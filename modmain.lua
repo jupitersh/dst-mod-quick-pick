@@ -16,6 +16,8 @@ local quick_pick_list = {
     "bullkelp_plant",
     "carrat_planted",
     "sapling_moon",
+    "bananabush",
+    "monkeytail"
 }
 
 --Quick Pick Cactus or Lichen
